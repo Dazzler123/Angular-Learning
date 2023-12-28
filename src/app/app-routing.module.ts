@@ -10,7 +10,7 @@ const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'customer', component:CustomerComponent},
   {path:'order', component:OrderComponent},
-  {path:'**', component:NotFoundPageComponent}
+  {path:'**', component:NotFoundPageComponent}  //if path doesnt match any of the above routes, then load this component
 ];
 
 @NgModule({
