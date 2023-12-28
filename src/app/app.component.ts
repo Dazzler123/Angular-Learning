@@ -7,17 +7,5 @@ import {Router} from "@angular/router";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  constructor(private router: Router) {
-
-  }
-
-  navigateToPage(pathSegment: string): void {
-    this.router.navigateByUrl(pathSegment)
-      .then(e => {
-        console.log(e);
-      }).catch(error => {
-      console.log(error);
-    })
-  }
+  value = '';
 }
