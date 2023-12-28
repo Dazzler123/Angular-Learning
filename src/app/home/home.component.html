@@ -1,7 +1,10 @@
-<input type="text"
-       #myVar
-       (keyup.enter)="setData(myVar.value)"
-       placeholder="Type here....">
+<input
+  type="text"
+  placeholder="Type here..."
+  #myElement
+  (keyup)="data=myElement.value"
+>
+<hr>
+My Name is {{data}}
 
-<!--now here it will send the text when typing is ended keyup and enter key is-->
-<!--pressed-->
+<!--achieved two way data binding through interpolation and event binding-->
