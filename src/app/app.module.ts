@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HomeComponent} from "./home/home.component";
 import {FormsModule} from "@angular/forms";
+import { CustomerComponent } from './customer/customer.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CustomerComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
