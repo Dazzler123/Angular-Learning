@@ -1,10 +1,9 @@
 <input
   type="text"
   placeholder="Type here..."
-  #myElement
-  (keyup)="data=myElement.value"
+  [(ngModel)]="data"
 >
 <hr>
 My Name is {{data}}
 
-<!--achieved two way data binding through interpolation and event binding-->
+<!--achieved two way data binding using the ng model-->
