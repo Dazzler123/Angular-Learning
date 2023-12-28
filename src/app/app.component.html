@@ -1,8 +1,11 @@
 <header>
 
-  <button routerLink="/home" routerLinkActive="active">Home</button>
-  <button routerLink="/customer" routerLinkActive="active">Customer</button>
-  <button routerLink="/order" routerLinkActive="active">Order</button>
+  <button routerLink="/home"
+          (click)="navigateToPage('/home')" routerLinkActive="active">Home</button>
+  <button routerLink="/customer"
+          (click)="navigateToPage('/customer')" routerLinkActive="active">Customer</button>
+  <button routerLink="/order"
+          (click)="navigateToPage('/order')" routerLinkActive="active">Order</button>
 
 </header>
 <hr>
