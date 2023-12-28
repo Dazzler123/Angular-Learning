@@ -1,9 +1,7 @@
 <input type="text"
        #myVar
-       (keyup)="setData(myVar.value)"
+       (keyup.enter)="setData(myVar.value)"
        placeholder="Type here....">
-<button (click)="printData()">Print Data</button>
 
-<!--myVar is a template reference variable here-->
-<!--It stores the input text value of the input field-->
-<!--This is what you called Event Binding-->
+<!--now here it will send the text when typing is ended keyup and enter key is-->
+<!--pressed-->

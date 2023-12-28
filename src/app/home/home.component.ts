@@ -9,7 +9,7 @@ export class HomeComponent {
   data: string = "";
 
   setData(value: string): void {
-    this.data = value;
+    alert("Typed Text : " + value);
   }
 
   printData(): void {
