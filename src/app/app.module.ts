@@ -7,13 +7,15 @@ import {HomeComponent} from "./home/home.component";
 import {FormsModule} from "@angular/forms";
 import { CustomerComponent } from './customer/customer.component';
 import { OrderComponent } from './order/order.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CustomerComponent,
-    OrderComponent
+    OrderComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
