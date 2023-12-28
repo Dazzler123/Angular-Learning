@@ -1,2 +1,9 @@
-<img [src]="image" alt="image" [width]="width" [style.border-top]="1">
-<!--this is property binding-->
+<input type="text"
+       #myVar
+       (keyup)="setData(myVar.value)"
+       placeholder="Type here....">
+<button (click)="printData()">Print Data</button>
+
+<!--myVar is a template reference variable here-->
+<!--It stores the input text value of the input field-->
+<!--This is what you called Event Binding-->
