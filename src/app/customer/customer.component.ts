@@ -14,7 +14,10 @@ export class CustomerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.data = this.activatedRoute.snapshot.paramMap.get('data')!;
+    // this.data = this.activatedRoute.snapshot.paramMap.get('data')!;
+    this.activatedRoute.paramMap.subscribe(response => {
+      this.data = response.get('data')!;
+    });
   }
 
 }
